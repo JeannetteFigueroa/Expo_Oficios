@@ -1,0 +1,255 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #ecd5d5;
+    /* fondo blanco */
+    color: #000000;
+    /* texto negro */
+}
+
+/* Header con logo - versión responsiva */
+header {
+  background: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 2rem 1rem; /* padding general */
+  border-bottom: 4px solid #e91e63;
+  position: relative;
+}
+
+/* Contenedor del texto que se centra y ocupa todo el ancho */
+header .header-text {
+  max-width: 800px; /* opcional: limitar ancho en desktop */
+  margin: 0 auto; /* centrar horizontalmente */
+  padding-left: 0; /* quitar padding extra */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #673ab7;
+}
+
+header .subtitle {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+/* Cards del equipo */
+.team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columnas por fila */
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.card {
+    background: #ffffff;
+    border: 2px solid #f4b400;
+    /* borde mostaza */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* círculo elegante */
+    object-fit: cover;
+    /* evita deformaciones */
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin: 0 auto;
+    display: block;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    margin: 0.8rem 0 0.3rem;
+    color: #e91e63;
+    /* nombres en fucsia */
+}
+
+.card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Responsividad */
+
+@media (max-width: 900px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  header .subtitle {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+  header .subtitle {
+    font-size: 0.9rem;
+  }
+  header img.logo {
+    width: 60px; /* logo más pequeño en móviles */
+  }
+}
+
+@media (max-width: 900px) {
+    .team {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columnas en tablet */
+    }
+}
+
+@media (max-width: 600px) {
+    .team {
+        grid-template-columns: 1fr;
+        /* 1 columna en celular */
+    }
+}
+
+/* 🔍 Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background: #ffffff;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 3px solid #673ab7;
+    /* borde violeta */
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.modal-content h2 {
+    margin: 0.5rem 0;
+    color: #e91e63;
+    /* fucsia */
+}
+
+.modal-content p {
+    font-size: 1rem;
+    color: #444;
+}
+
+.modal-content a {
+    color: #673ab7;
+    /* violeta */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.modal-content a:hover {
+    color: #f4b400;
+    /* hover mostaza */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    color: #e91e63;
+    cursor: pointer;
+}
+
+/* 📱 Responsividad del modal */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .modal-content {
+        padding: 1.5rem;
+    }
+}
+
+/* Footer */
+footer {
+    background: #763563;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0; /* padding vertical */
+    font-size: 0.9rem;
+    border-top: 4px solid #831294;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column; /* en móvil sigue vertical */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Si quieres que los créditos se vean en varias líneas en móvil */
+footer p {
+    margin: 0.2rem 0; /* espacio entre líneas */
+    line-height: 1.4;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    footer {
+        font-size: 0.8rem;
+        padding: 0.8rem 0;
+    }
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex: 1; /* contenido ocupa espacio restante */
+}
+
+main {
+    flex: 1; /* main debe envolver tu contenido principal */
+}

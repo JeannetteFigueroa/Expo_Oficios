@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atención al Cliente - Expo Oficios</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/pestaña.png" type="image/png">
+</head>
+
+<body>
+  <header>
+    <div class="header-text">
+      <h1>Atención al Cliente - Expo Oficios</h1>
+      <p class="subtitle">Conoce a nuestro equipo de atención al cliente</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="team">
+      <!-- Integrante 1 -->
+      <div class="card">
+        <img src="img/integrante1.png" alt="Integrante 1" onclick="openModal(0)">
+        <h2>Ana Belén Zapata Araya</h2>
+      </div>
+
+      <!-- Integrante 2 -->
+      <div class="card">
+        <img src="img/integrante2.png" alt="Integrante 2" onclick="openModal(1)">
+        <h2>María renee Cerda pardo</h2>
+      </div>
+
+      <!-- Integrante 3 -->
+      <div class="card">
+        <img src="img/integrante3.png" alt="Integrante 3" onclick="openModal(2)">
+        <h2>Mónica Angélica Figueroa Godoy </h2>
+      </div>
+
+      <!-- Integrante 4 -->
+      <div class="card">
+        <img src="img/integrante4.png" alt="Integrante 4" onclick="openModal(3)">
+        <h2>Melani Urrutia Villablanca </h2>
+      </div>
+
+      <!-- Integrante 5 -->
+      <div class="card">
+        <img src="img/integrante5.png" alt="Integrante 5" onclick="openModal(4)">
+        <h2>Noemi Andrea Rivera Nuñez</h2>
+      </div>
+
+      <!-- Integrante 6 -->
+      <div class="card">
+        <img src="img/integrante6.png" alt="Integrante 6" onclick="openModal(5)">
+        <h2>Vanessa Ayling Wienberg Galaz</h2>
+      </div>
+
+      <!-- Puedes agregar más integrantes repitiendo este bloque -->
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="modal-img" src="" alt="Foto integrante">
+      <h2 id="modal-name"></h2>
+      <p id="modal-role"></p>
+      <p id="modal-info"></p>
+    </div>
+  </div>
+  <footer>
+    <p>
+      Página web creada por Jeannette Figueroa, estudiante de Ing. en informatica de duoc (jea.figueroa@duocuc.cl) ·
+      Diseñada especialmente para las chicas de la fundacion: "<strong>Fundacion SoyMas</strong>"
+    </p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
