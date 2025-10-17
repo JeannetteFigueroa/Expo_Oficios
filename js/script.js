@@ -11,7 +11,7 @@ const integrantes = [
         nombre: "María renee Cerda pardo",
     telefono: "+56 9 6449 7547",
     correo: "mariiarenee18@gmail.com",
-    linkedin: "https://www.linkedin.com/in/maria-renee-cerda-9069542b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedin: "https://www.linkedin.com/in/maria-renee-cerda-pardo-9069542b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     foto: "img/integrante2.png"
   },
   {
@@ -39,7 +39,7 @@ const integrantes = [
     nombre: "Vanessa Ayling Wienberg Galaz",
     telefono: "+56 9 3141 5118",
     correo: "Vanessa.wienberg2025@soymas.cl",
-    linkedin: "https://www.linkedin.com/in/vanessa-wienberg-06b7b726a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin: "https://www.linkedin.com/in/vanessa-wienberg-galaz-06b7b726a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     foto: "img/integrante6.png"
   }
 ];
